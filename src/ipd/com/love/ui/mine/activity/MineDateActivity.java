@@ -10,6 +10,8 @@ import org.androidannotations.annotations.ViewById;
 import com.jumpbox.jumpboxlibrary.bitmap.BitmapUtils;
 import com.jumpbox.jumpboxlibrary.utils.MyBitmapUtils;
 import com.jumpbox.jumpboxlibrary.view.CircleImageView;
+import com.jumpbox.jumpboxlibrary.wheelview.PopupUtils;
+import com.jumpbox.jumpboxlibrary.wheelview.PopupUtils.onSelectFinishListener;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -69,6 +71,18 @@ public class MineDateActivity extends BaseActivity {
 	}
 	@Click(R.id.mine_data)
 	public void mineData(View view){
+		PopupUtils.showPopwindow(this, PopupUtils.getDataPick2(this, new onSelectFinishListener() {
+
+			@Override
+			public void onSelectFinish(String startDate, String startTime, String endDate, String endTime) {
+			}
+
+			@Override
+			public void onSelectFinish(final String year, String month, String day) {
+				show_data.setText(year+"年"+month+"月"+day+"日");
+			}
+		}));
+	
 		
 	}
 	@Click(R.id.mine_address)
