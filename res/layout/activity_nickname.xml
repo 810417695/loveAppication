@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <include layout="@layout/base_title"/>
+    
+    <EditText 
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:hint="请输入您的昵称"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:maxLength="10"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用真实姓名更容易让别人找到你"
+        android:textSize="12sp"
+        android:textColor="@color/gray" 
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"/>
+    
+</LinearLayout>

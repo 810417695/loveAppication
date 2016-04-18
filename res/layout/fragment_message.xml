@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup 
+        android:id="@+id/rb_tab_infromation"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/base_color"
+        >
+        <RadioButton 
+           android:id="@+id/tv_bidding_information"
+            style="@style/information_tab"
+            android:text="招投标信息" />
+        
+        <RadioButton 
+           android:id="@+id/tv_peer_exchange"
+            style="@style/information_tab"
+            android:checked="true"
+            android:text="同行交流" />
+        <RadioButton 
+           android:id="@+id/tv_technical_information"
+            style="@style/information_tab"
+            android:text="技术资料" />
+        
+    </RadioGroup>
+
+    <TextView 
+        android:id="@+id/screening_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="技术资料类别筛选"/>
+    
+    <View style="@style/black_line1"/>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_infromation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp">
+    </android.support.v4.view.ViewPager>
+   
+</LinearLayout>

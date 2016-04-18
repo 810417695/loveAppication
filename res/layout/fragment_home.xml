@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/base_bg" >
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical" 
+    android:scrollbars="none"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+   
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#f00"
+        />
+    <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/base_bg"/> />
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <include 
+            layout="@layout/hone_ll"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <View android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_bg"/>
+        <include layout="@layout/hone_ll"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+            android:layout_weight="1"
+           />
+    </LinearLayout>
+ 
+       <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/base_bg"/> />
+    <LinearLayout
+        android:id="@+id/ly_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <include 
+            layout="@layout/hone_ll"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <View android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_bg"/>
+        <include layout="@layout/hone_ll"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+            android:layout_weight="1"
+           />
+    </LinearLayout>
+    
+  </LinearLayout>
+</ScrollView>
+    <include layout="@layout/base_phone"/>
+</LinearLayout>

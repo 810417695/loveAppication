@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_color">#15b5e9</color>
+    <color name="base_green2">#37BB8C</color>
+    <color name="black">#000000</color>
+    <color name="base_gray">#999999</color>
+    <color name="base_bg">#EEEEEE</color>
+    <color name="phone_bg">#D7D7D7</color>
+    <color name="white">#fff</color>
+    
+    <color name="green">#0f0</color>
+    <color name="alpha">#00000000</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="gray3">#DDDDDD</color>
+    <color name="gray2">#888888</color>
+    <color name="alpha_black">#99000000</color>
+    <color name="alpha_white">#33ffffff</color>
+    <color name="base_title_bg">#2F2F2F</color>
+    <color name="base_search_bg">#4E4E4E</color>
+    <color name="base_bg2">#E2E2E2</color>
+    <color name="base_green">#7ECFAF</color>
+    <color name="white3">#E2E2E2</color>
+    <color name="base_green3">#aa37BB8C</color>
+    <color name="mine_gray">#A2A2A2</color>
+    <color name="mine_back">#EBEBEB</color>
+    <color name="mine_word_color">#37BB8c</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="label_bg">#E2E2E2</color>
+    <color name="layout_grey4">#dcdcdc</color> <!-- 辅色4 -->
+    <color name="select_gray">#F1F1F1</color> <!-- 辅色4 -->
+</resources>

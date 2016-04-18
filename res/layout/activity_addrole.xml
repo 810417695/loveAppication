@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include 
+        layout="@layout/base_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/loading_02" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/imageView1"
+           android:layout_toRightOf="@+id/imageView1"
+           android:layout_centerVertical="true"
+           android:orientation="vertical" >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="“个人发包”和“团队发包”的角色是二选一;"
+               android:textSize="12sp" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="3dp"
+               android:text="“个人技工”和“团队技工”的角色是二选一;"
+               android:textSize="12sp" />
+       </LinearLayout>
+    </RelativeLayout>
+    
+   <!-- 个人技工 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:text="个人技工" />
+        
+        <RelativeLayout
+            android:id="@+id/add_personal_mechanic" 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="1">
+           
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp" 
+                android:visibility="gone">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张力强（已认证）"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金牌技工"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"/>
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台信誉"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"
+                    android:layout_marginLeft="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="认证中"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="请耐心等待"
+                    android:textSize="12sp"
+                    android:textColor="@color/base_gray"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+    <!-- 技工团队 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:text="技工团队" />
+        
+        <RelativeLayout
+            android:id="@+id/add_technician_team" 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="1">
+           
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp" 
+                android:visibility="gone">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张力强（已认证）"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金牌技工"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"/>
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台信誉"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"
+                    android:layout_marginLeft="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="完善资料"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="个人承接项目施工、快修任务"
+                    android:textSize="12sp"
+                    android:textColor="@color/base_gray"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+    </LinearLayout> <!-- 个人技工 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:text="个人发包" />
+        
+        <RelativeLayout 
+            android:id="@+id/ad_individual_contract"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="1">
+           
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp" 
+                android:visibility="gone">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张力强（已认证）"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金牌技工"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"/>
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台信誉"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"
+                    android:layout_marginLeft="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="认证中"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="请耐心等待"
+                    android:textSize="12sp"
+                    android:textColor="@color/base_gray"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+    </LinearLayout> <!-- 个人技工 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:text="公司发包" />
+        
+        <RelativeLayout
+            android:id="@+id/add_company_contract" 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="1">
+           
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp" 
+                android:visibility="gone">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张力强（已认证）"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金牌技工"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"/>
+                    <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台信誉"
+                    android:padding="3dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shape_black"
+                    android:layout_marginLeft="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="认证中"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="请耐心等待"
+                    android:textSize="12sp"
+                    android:textColor="@color/base_gray"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mine_data_headimage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="头像:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="请上传头像"
+                    android:textColor="@color/base_gray"
+                    android:textSize="12sp" />
+
+                <!-- android:src="@drawable/z11" -->
+
+                <com.jumpbox.jumpboxlibrary.view.CircleImageView
+                    android:id="@+id/head_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp" >
+                </com.jumpbox.jumpboxlibrary.view.CircleImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/right_arrow3" />
+            </LinearLayout>
+
+            <View style="@style/black_line1" />
+            <!-- 姓名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="姓名："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入真实姓名，便于项目方联系您"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <!-- 服务区域 -->
+
+            <View style="@style/black_line1" />
+            <!-- 姓名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="8dp"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="服务区域:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/right_arrow3" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/area_notip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="个人技工最多选择5个人"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/area_notip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金牌技工最多可以选择50个"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <ipd.com.love.view.FlowLayout
+                    android:id="@+id/fl_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+                </ipd.com.love.view.FlowLayout>
+            </LinearLayout>
+            <!-- 技能类型 -->
+
+            <View style="@style/black_line1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="技能类型:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/right_arrow3" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/type_notip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="准确填写个人资料，助您找到更多合适项目"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/type_notip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人技工最多可以选择15个"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/type_notip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金牌技工最多可以选择50个"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <ipd.com.love.view.FlowLayout
+                    android:id="@+id/fl_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+                </ipd.com.love.view.FlowLayout>
+            </LinearLayout>
+            <!-- 工龄 -->
+
+            <View style="@style/black_line1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="工龄:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="请选择"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/right_arrow3" />
+            </LinearLayout>
+            <!-- 手机号 -->
+
+            <View style="@style/black_line1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="手机号："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入手机号码"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <!-- 标签选择 -->
+
+            <View style="@style/black_line1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="标签选择:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="最多选5个哦！"
+                        android:textColor="@color/base_gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ipd.com.love.view.FlowRadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="工人有意外保险" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="能开普通发票" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="能开增值税票" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="24小时服务" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="全年服务" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="能做深化设计" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="有操作证件" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="能做方案标书" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="自有工程车辆" />
+
+                    <CheckBox
+                        style="@style/label"
+                        android:text="有特种作业证件" />
+                </ipd.com.love.view.FlowRadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="如果团队还有其他特长技能，可以在自定义描述下写下"
+                    android:textColor="@color/base_gray"
+                    android:textSize="12sp" />
+
+                <View style="@style/black_line1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:text="自定义描述:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    
+                    android:hint="示例:本团队长期从事整体项目、系统监管、网络设备、人工清包等服务、经验丰富、技术专业，已经做了15年，获得用户的一致认可，办事效率高，质量好，服务优，我们的服务就是您的选择！"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/base_gray" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:background="@color/base_gray" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="身份证正面"
+                        android:textColor="@color/base_gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_alignLeft="@+id/imageView1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="身份证反面"
+                        android:textColor="@color/base_gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="身份证仅提供平台认证使用，其他用户无法查看，保护您的隐私"
+                    android:textColor="@color/base_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View style="@style/black_line1" />
+
+            <!-- 身份证 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="案例图片:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="最多上传5张哦！"
+                        android:textColor="@color/base_gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/base_gray" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/base_gray" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/base_gray" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/base_gray" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/base_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/black_line1" />
+            <!-- 加入快修 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="加入快修:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="有你挣不完的小钱~"
+                    android:textColor="@color/base_gray"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/right_arrow3" />
+            </LinearLayout>
+
+            <View style="@style/black_line1" />
+
+            <TextView
+                android:id="@+id/join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_black"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="加入"
+                android:textSize="18sp"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

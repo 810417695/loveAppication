@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_phone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/phone_bg"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爱用工平台一键服务:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="热线:400-666-6666"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" />
+
+</RelativeLayout>
