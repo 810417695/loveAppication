@@ -1,4 +1,11 @@
 eclipse.preferences.version=1
+encoding//src/ipd/com/love/ui/mine/activity/ContactWeActivity.java=UTF-8
+encoding//src/ipd/com/love/ui/mine/activity/MineCollectionActivity.java=UTF-8
 encoding//src/ipd/com/love/ui/mine/activity/MineDateActivity.java=UTF-8
+encoding//src/ipd/com/love/ui/mine/activity/MineIntegralActivity.java=UTF-8
+encoding//src/ipd/com/love/ui/mine/activity/MineMessageActivity.java=UTF-8
+encoding//src/ipd/com/love/ui/mine/activity/MinePublishActivity.java=UTF-8
+encoding//src/ipd/com/love/ui/mine/activity/ReCommentFriendsActivity.java=UTF-8
+encoding//src/ipd/com/love/utils/CityUtils.java=UTF-8
 encoding//src/ipd/com/love/view/CropImageView.java=UTF-8
 encoding//src/ipd/com/love/view/FlowLayout.java=UTF-8

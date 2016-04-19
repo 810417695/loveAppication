@@ -18,7 +18,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import ipd.com.love.R;
@@ -75,6 +74,7 @@ public class MineDateActivity extends BaseActivity {
 
 			@Override
 			public void onSelectFinish(String startDate, String startTime, String endDate, String endTime) {
+			
 			}
 
 			@Override
@@ -82,17 +82,22 @@ public class MineDateActivity extends BaseActivity {
 				show_data.setText(year+"年"+month+"月"+day+"日");
 			}
 		}));
-	
 		
 	}
 	@Click(R.id.mine_address)
 	public void mineAddress(View view){
-		
+
+//		CityUtils.getInstance().showSelectDialog(this, new onSelectCityFinishListener() {
+//			@Override
+//			public void onFinish(final CityBean province, final CityBean city) {
+//				show_address.setText(province+" "+city);
+//			}
+//		});
+	
 	}
 	@Click(R.id.mine_head) 
 	public void mineHeadImage(View view){
 		new MySelfSheetDialog(this).builder().addSheetItem("拍照", SheetItemColor.Black, new OnSheetItemClickListener() {
-
 			@Override
 			public void onClick(int which) {
 				photoSaveName = String.valueOf(System.currentTimeMillis()) + ".png";

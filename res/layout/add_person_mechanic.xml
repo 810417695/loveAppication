@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:id="@+id/ll_parent">
 
     <include layout="@layout/base_title" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent" 
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,6 +36,7 @@
                     android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/head_tip"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -47,8 +50,8 @@
 
                 <com.jumpbox.jumpboxlibrary.view.CircleImageView
                     android:id="@+id/head_image"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
                     android:layout_margin="5dp" >
                 </com.jumpbox.jumpboxlibrary.view.CircleImageView>
@@ -89,9 +92,12 @@
                     android:background="@null"
                     android:gravity="right"
                     android:hint="请输入真实姓名，便于项目方联系您"
+					android:textColorHint="@color/base_gray"
+					android:cursorVisible="true"
                     android:padding="5dp"
                     android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:textSize="12sp"
+                    android:focusable="false" />
             </LinearLayout>
             <!-- 服务区域 -->
 
@@ -103,13 +109,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                android:padding="8dp"
                  >
 
                 <LinearLayout
+                    android:id="@+id/service_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal"
+                    android:padding="8dp" >
 
                     <TextView
                         android:layout_width="0dp"
@@ -135,6 +142,7 @@
                     android:layout_marginTop="10dp"
                     android:text="个人技工最多选择5个人"
                     android:textColor="@color/base_gray"
+                    android:layout_marginLeft="8dp"
                     android:textSize="14sp" />
 
                 <TextView
@@ -142,6 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="金牌技工最多可以选择50个"
+                    android:layout_marginLeft="8dp"
                     android:textColor="@color/base_gray"
                     android:textSize="14sp" />
 
@@ -165,6 +174,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/skill_type"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
@@ -223,6 +233,7 @@
             <View style="@style/black_line1" />
 
             <LinearLayout
+                android:id="@+id/working_years"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:orientation="horizontal"
@@ -239,6 +250,7 @@
                     android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/show_working_year"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -252,7 +264,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/right_arrow3" />
+                    android:src="@drawable/right_arrow3" 
+                    android:layout_marginRight="8dp"/>
             </LinearLayout>
             <!-- 手机号 -->
 
@@ -321,47 +334,60 @@
                 </LinearLayout>
 
                 <ipd.com.love.view.FlowRadioGroup
+                    android:id="@+id/vg_select_label"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" >
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="5dp" >
 
                     <CheckBox
+                        android:id="@+id/cb1"
                         style="@style/label"
                         android:text="工人有意外保险" />
 
                     <CheckBox
+                        android:id="@+id/cb2"
                         style="@style/label"
                         android:text="能开普通发票" />
 
                     <CheckBox
+                        android:id="@+id/cb3"
                         style="@style/label"
                         android:text="能开增值税票" />
 
                     <CheckBox
+                        android:id="@+id/cb4"
                         style="@style/label"
                         android:text="24小时服务" />
 
                     <CheckBox
+                        android:id="@+id/cb5"
                         style="@style/label"
                         android:text="全年服务" />
 
                     <CheckBox
+                        android:id="@+id/cb6"
                         style="@style/label"
                         android:text="能做深化设计" />
 
                     <CheckBox
+                        android:id="@+id/cb7"
                         style="@style/label"
                         android:text="有操作证件" />
 
                     <CheckBox
+                        android:id="@+id/cb8"
                         style="@style/label"
                         android:text="能做方案标书" />
 
                     <CheckBox
+                        android:id="@+id/cb9"
                         style="@style/label"
                         android:text="自有工程车辆" />
 
                     <CheckBox
+                        android:id="@+id/cb10"
                         style="@style/label"
                         android:text="有特种作业证件" />
                 </ipd.com.love.view.FlowRadioGroup>

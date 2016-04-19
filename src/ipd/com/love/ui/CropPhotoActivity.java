@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import ipd.com.love.R;
 import ipd.com.love.base.BaseActivity;
+import ipd.com.love.global.GlobalParams;
 import ipd.com.love.utils.LoadingUtils;
 import ipd.com.love.utils.ToastUtils;
 import ipd.com.love.view.CropImageView;
@@ -56,7 +57,6 @@ public class CropPhotoActivity extends BaseActivity {
 	}
 
 	public static final String SDPATH = Environment.getExternalStorageDirectory() + "/";
-	public static final String ROOT_PATH = Environment.getExternalStorageDirectory() + "/gaojian";
 	@Click(R.id.tv_right)
 	public void save(View v) {
 		if (Environment.getExternalStorageState() == Environment.MEDIA_UNMOUNTED) {
@@ -64,7 +64,11 @@ public class CropPhotoActivity extends BaseActivity {
 			return;
 		}
 		LoadingUtils.show(this);
-		String path = ROOT_PATH + "/" + System.currentTimeMillis() + ".png";
+		String path = GlobalParams.ROOT_PATH + "/" + System.currentTimeMillis() + ".png";
+		File file = new File(GlobalParams.ROOT_PATH);
+		if (!file.exists()) {
+			file.mkdirs();
+		}
 		Bitmap mBitmap = cropimage.getCropImage();
 		try {
 			MyBitmapUtils.savePhotoToSDCard(mBitmap, path);

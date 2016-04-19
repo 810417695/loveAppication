@@ -13,7 +13,14 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import ipd.com.love.R;
+import ipd.com.love.ui.account.AddRoleActivity_;
+import ipd.com.love.ui.mine.activity.ContactWeActivity_;
+import ipd.com.love.ui.mine.activity.MineCollectionActivity_;
 import ipd.com.love.ui.mine.activity.MineDateActivity_;
+import ipd.com.love.ui.mine.activity.MineIntegralActivity_;
+import ipd.com.love.ui.mine.activity.MineMessageActivity_;
+import ipd.com.love.ui.mine.activity.MinePublishActivity_;
+import ipd.com.love.ui.mine.activity.ReCommentFriendsActivity_;
 
 public class MineFragment extends Fragment {
 	
@@ -43,6 +50,27 @@ public class MineFragment extends Fragment {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				if(position == 0){    //个人资料
 					Intent intent = new Intent(getActivity(),MineDateActivity_.class);
+					startActivity(intent);
+				}else if(position == 1){ //添加角色
+					Intent intent = new Intent(getActivity(),AddRoleActivity_.class);
+					startActivity(intent);
+				}else if(position == 2){ //我的发布
+					Intent intent = new Intent(getActivity(),MinePublishActivity_.class);
+					startActivity(intent);
+				}else if(position == 3){//我的收藏
+					Intent intent = new Intent(getActivity(),MineCollectionActivity_.class);
+					startActivity(intent);
+				}else if(position == 4){//推荐好友
+					Intent intent = new Intent(getActivity(),ReCommentFriendsActivity_.class);
+					startActivity(intent);
+				}else if(position == 5){//我的积分
+					Intent intent = new Intent(getActivity(),MineIntegralActivity_.class);
+					startActivity(intent);
+				}else if(position == 6){//我的消息
+					Intent intent = new Intent(getActivity(),MineMessageActivity_.class);
+					startActivity(intent);
+				}else if(position == 7){//联系我们
+					Intent intent = new Intent(getActivity(),ContactWeActivity_.class);
 					startActivity(intent);
 				}
 			}

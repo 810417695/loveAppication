@@ -88,6 +88,14 @@
               <activity 
             android:name="ipd.com.love.ui.account.addrole.AddPersonMechanicActivity_"
              android:screenOrientation="portrait"></activity> 
+             <!-- 服务区域 -->  
+              <activity 
+            android:name="ipd.com.love.ui.account.addrole.ServiceAreaActivity_"
+             android:screenOrientation="portrait"></activity> 
+             <!-- 技能类型 -->  
+              <activity 
+            android:name="ipd.com.love.ui.account.addrole.SkillTypeActivity_"
+             android:screenOrientation="portrait"></activity> 
              
                <!-- 我的姓名 -->  
               <activity 
@@ -97,6 +105,37 @@
               <activity 
             android:name="ipd.com.love.ui.CropPhotoActivity_"
              android:screenOrientation="portrait"></activity> 
+             
+              <!-- 我的发布 -->  
+              <activity 
+            android:name="ipd.com.love.ui.mine.activity.MinePublishActivity_"
+             android:screenOrientation="portrait"></activity> 
+             
+              <!-- 我的收藏 -->  
+              <activity 
+            android:name="ipd.com.love.ui.mine.activity.MineCollectionActivity_"
+             android:screenOrientation="portrait"></activity> 
+             
+              <!-- 推荐好友 -->  
+              <activity 
+            android:name="ipd.com.love.ui.mine.activity.ReCommentFriendsActivity_"
+             android:screenOrientation="portrait"></activity> 
+             
+              <!-- 我的积分 -->  
+              <activity 
+            android:name="ipd.com.love.ui.mine.activity.MineIntegralActivity_"
+             android:screenOrientation="portrait"></activity> 
+             
+              <!-- 我的消息 -->  
+              <activity 
+            android:name="ipd.com.love.ui.mine.activity.MineMessageActivity_"
+             android:screenOrientation="portrait"></activity> 
+             
+              <!-- 联系我们 -->  
+              <activity 
+            android:name="ipd.com.love.ui.mine.activity.ContactWeActivity_"
+             android:screenOrientation="portrait"></activity> 
+             
     </application>
 
 </manifest>
